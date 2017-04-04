@@ -1,0 +1,38 @@
+[
+  {
+    "codigo_fatura": 4,
+    "codigo_lote": 1,
+    "codigo_regra": 1,
+    "codigo_emissor": 77,
+    "codigo_cliente": 795,
+    "status": true,
+    "valor_bruto": 726343.02,
+    "valor_liquido": 640779.81,
+    "data_emissao": "2017-01-12T10:26:37 +02:00",
+    "data_vencimento": "2017-01-20T11:24:24 +02:00"
+  },
+  {
+    "codigo_fatura": 5,
+    "codigo_lote": 1,
+    "codigo_regra": 1,
+    "codigo_emissor": 77,
+    "codigo_cliente": 2970,
+    "status": true,
+    "valor_bruto": 269946.55,
+    "valor_liquido": 238146.85,
+    "data_emissao": "2017-01-04T03:53:50 +02:00",
+    "data_vencimento": "2017-01-25T11:55:31 +02:00"
+  },
+  {
+    "codigo_fatura": 6,
+    "codigo_lote": 1,
+    "codigo_regra": 1,
+    "codigo_emissor": 77,
+    "codigo_cliente": 2362,
+    "status": true,
+    "valor_bruto": 343662.29,
+    "valor_liquido": 303178.87,
+    "data_emissao": "2017-01-10T01:08:38 +02:00",
+    "data_vencimento": "2017-01-28T12:08:35 +02:00"
+  }
+]

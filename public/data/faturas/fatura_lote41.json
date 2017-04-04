@@ -1,0 +1,14 @@
+[
+  {
+    "codigo_fatura": 30,
+    "codigo_lote": 4,
+    "codigo_regra": 1,
+    "codigo_emissor": 77,
+    "codigo_cliente": 3951,
+    "status": true,
+    "valor_bruto": 456700,
+    "valor_liquido": 402900.64,
+    "data_emissao": "2017-04-04T02:12:15 +03:00",
+    "data_vencimento": "2017-04-17T05:33:53 +03:00"
+  }
+]

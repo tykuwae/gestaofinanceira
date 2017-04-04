@@ -1,0 +1,19 @@
+[
+  '{{repeat(5, 7)}}',
+  {
+    codigo_fatura: '{{index()}}',
+    codigo_lote:  1,
+    codigo_regra: 1,
+    codigo_emissor: 77,
+    codigo_cliente: '{{integer(20, 5000)}}',
+    status: '{{bool()}}',
+    valor_bruto: '{{floating(300000, 1400000, 2)}}',
+    valor_liquido: function () {
+      var x  = this.valor_bruto * (1 - 0.1175)
+      return x.toFixed(2)/1;
+    },
+    data_emissao: '{{date(new Date(2017, 0, 1), new Date(2017, 0, 15), "YYYY-MM-ddThh:mm:ss Z")}}',
+    data_vencimento: '{{date(new Date(2017, 0, 16), new Date(2017, 0, 31), "YYYY-MM-ddThh:mm:ss Z")}}'
+
+  }
+]

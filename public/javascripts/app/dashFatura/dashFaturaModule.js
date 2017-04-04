@@ -1,0 +1,1 @@
+var dashFaturaModule = angular.module("dashFaturaModule", []);

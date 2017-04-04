@@ -2977,14 +2977,14 @@ if (typeof NProgress != 'undefined') {
 
 				  echartBar.setOption({
 					title: {
-					  text: 'Faturamento',
-					  subtext: 'Graph Sub-text'
+					  text: 'Valor Líquido',
+					  subtext: 'R$'
 					},
 					tooltip: {
 					  trigger: 'axis'
 					},
 					legend: {
-					  data: ['sales', 'purchases']
+					  data: ['Venda Imobiliária', 'Prestação de Serviços']
 					},
 					toolbox: {
 					  show: false
@@ -2992,24 +2992,15 @@ if (typeof NProgress != 'undefined') {
 					calculable: false,
 					xAxis: [{
 					  type: 'category',
-					  data: ['1?', '2?', '3?', '4?', '5?', '6?', '7?', '8?', '9?', '10?', '11?', '12?']
+					  data: ['Jan', 'Fev', 'Mar', 'Abr']
 					}],
 					yAxis: [{
 					  type: 'value'
 					}],
 					series: [{
-					  name: 'sales',
+					  name: 'Venda Imobiliária',
 					  type: 'bar',
-					  data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
-					  markPoint: {
-						data: [{
-						  type: 'max',
-						  name: '???'
-						}, {
-						  type: 'min',
-						  name: '???'
-						}]
-					  },
+					  data: [1182105.53, 883071.23, 824648.35, 402900.64],
 					  markLine: {
 						data: [{
 						  type: 'average',
@@ -3017,9 +3008,9 @@ if (typeof NProgress != 'undefined') {
 						}]
 					  }
 					}, {
-					  name: 'purchases',
+					  name: 'Prestação de Serviços',
 					  type: 'bar',
-					  data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+					  data: [398520.44, 1076431.15, 1042621.69, 386414.5],
 					  markPoint: {
 						data: [{
 						  name: 'sales',
@@ -4314,8 +4305,8 @@ if (typeof NProgress != 'undefined') {
 
 			  echartMiniPie .setOption({
 				title: {
-				  text: 'Chart #2',
-				  subtext: 'From ExcelHome',
+				  text: 'Abril',
+				  subtext: 'em aberto',
 				  sublink: 'http://e.weibo.com/1341556070/AhQXtjbqh',
 				  x: 'center',
 				  y: 'center',
@@ -4336,7 +4327,7 @@ if (typeof NProgress != 'undefined') {
 				  x: 170,
 				  y: 45,
 				  itemGap: 12,
-				  data: ['68%Something #1', '29%Something #2', '3%Something #3'],
+				  data: ['Vendas', 'Serviços', 'Tributos'],
 				},
 				toolbox: {
 				  show: true,
@@ -4365,44 +4356,44 @@ if (typeof NProgress != 'undefined') {
 				  }
 				},
 				series: [{
-				  name: '1',
+				  name: 'Vendas',
 				  type: 'pie',
 				  clockWise: false,
 				  radius: [105, 130],
 				  itemStyle: dataStyle,
 				  data: [{
-					value: 68,
-					name: '68%Something #1'
+					value: 43,
+					name: 'Vendas'
 				  }, {
-					value: 32,
+					value: 57,
 					name: 'invisible',
 					itemStyle: placeHolderStyle
 				  }]
 				}, {
-				  name: '2',
+				  name: 'Serviços',
 				  type: 'pie',
 				  clockWise: false,
 				  radius: [80, 105],
 				  itemStyle: dataStyle,
 				  data: [{
-					value: 29,
-					name: '29%Something #2'
+					value: 42,
+					name: 'Serviços'
 				  }, {
-					value: 71,
+					value: 58,
 					name: 'invisible',
 					itemStyle: placeHolderStyle
 				  }]
 				}, {
-				  name: '3',
+				  name: 'Tributos',
 				  type: 'pie',
 				  clockWise: false,
 				  radius: [25, 80],
 				  itemStyle: dataStyle,
 				  data: [{
-					value: 3,
-					name: '3%Something #3'
+					value: 15,
+					name: 'Tributos'
 				  }, {
-					value: 97,
+					value: 85,
 					name: 'invisible',
 					itemStyle: placeHolderStyle
 				  }]
