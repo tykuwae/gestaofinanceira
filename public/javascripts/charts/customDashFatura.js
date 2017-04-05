@@ -2977,14 +2977,14 @@ if (typeof NProgress != 'undefined') {
 
 				  echartBar.setOption({
 					title: {
-					  text: 'Valor Líquido',
-					  subtext: 'R$'
+					  text: 'Graph title',
+					  subtext: 'Graph Sub-text'
 					},
 					tooltip: {
 					  trigger: 'axis'
 					},
 					legend: {
-					  data: ['Venda Imobiliária', 'Prestação de Serviços']
+					  data: ['sales', 'purchases']
 					},
 					toolbox: {
 					  show: false
@@ -2992,15 +2992,24 @@ if (typeof NProgress != 'undefined') {
 					calculable: false,
 					xAxis: [{
 					  type: 'category',
-					  data: ['Jan', 'Fev', 'Mar', 'Abr']
+					  data: ['1?', '2?', '3?', '4?', '5?', '6?', '7?', '8?', '9?', '10?', '11?', '12?']
 					}],
 					yAxis: [{
 					  type: 'value'
 					}],
 					series: [{
-					  name: 'Venda Imobiliária',
+					  name: 'sales',
 					  type: 'bar',
-					  data: [1182105.53, 883071.23, 824648.35, 402900.64],
+					  data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+					  markPoint: {
+						data: [{
+						  type: 'max',
+						  name: '???'
+						}, {
+						  type: 'min',
+						  name: '???'
+						}]
+					  },
 					  markLine: {
 						data: [{
 						  type: 'average',
@@ -3008,9 +3017,9 @@ if (typeof NProgress != 'undefined') {
 						}]
 					  }
 					}, {
-					  name: 'Prestação de Serviços',
+					  name: 'purchases',
 					  type: 'bar',
-					  data: [398520.44, 1076431.15, 1042621.69, 386414.5],
+					  data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
 					  markPoint: {
 						data: [{
 						  name: 'sales',
@@ -3296,8 +3305,8 @@ if (typeof NProgress != 'undefined') {
 
 			  echartLine.setOption({
 				title: {
-				  text: 'Line Graph',
-				  subtext: 'Subtitle'
+				  text: 'Valor Líquido',
+				  subtext: 'R$ (Reais)'
 				},
 				tooltip: {
 				  trigger: 'axis'
@@ -3305,7 +3314,7 @@ if (typeof NProgress != 'undefined') {
 				legend: {
 				  x: 220,
 				  y: 40,
-				  data: ['Intent', 'Pre-order', 'Deal']
+				  data: ['Venda Imobiliária', 'Prestação de Serviços', 'Tributos']
 				},
 				toolbox: {
 				  show: true,
@@ -3334,13 +3343,13 @@ if (typeof NProgress != 'undefined') {
 				xAxis: [{
 				  type: 'category',
 				  boundaryGap: false,
-				  data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+				  data: ['Jan', 'Fev', 'Mar', 'Abr']
 				}],
 				yAxis: [{
 				  type: 'value'
 				}],
 				series: [{
-				  name: 'Deal',
+				  name: 'Venda Imobiliária',
 				  type: 'line',
 				  smooth: true,
 				  itemStyle: {
@@ -3350,9 +3359,9 @@ if (typeof NProgress != 'undefined') {
 					  }
 					}
 				  },
-				  data: [10, 12, 21, 54, 260, 830, 710]
+				  data: [1182105.53, 883071.23, 824648.35, 402900.64]
 				}, {
-				  name: 'Pre-order',
+				  name: 'Prestação de Serviços',
 				  type: 'line',
 				  smooth: true,
 				  itemStyle: {
@@ -3362,9 +3371,9 @@ if (typeof NProgress != 'undefined') {
 					  }
 					}
 				  },
-				  data: [30, 182, 434, 791, 390, 30, 10]
+				  data: [398520.44, 1076431.15, 1042621.69, 386414.5]
 				}, {
-				  name: 'Intent',
+				  name: 'Tributos',
 				  type: 'line',
 				  smooth: true,
 				  itemStyle: {
@@ -3374,7 +3383,7 @@ if (typeof NProgress != 'undefined') {
 					  }
 					}
 				  },
-				  data: [1320, 1132, 601, 234, 120, 90, 20]
+				  data: [240514.54,341208.86,326394.31,133956.23]
 				}]
 			  });
 
@@ -4217,7 +4226,7 @@ if (typeof NProgress != 'undefined') {
 				legend: {
 				  x: 'center',
 				  y: 'bottom',
-				  data: ['Direct Access', 'E-mail Marketing', 'Union Ad', 'Video Ads', 'Search Engine']
+				  data: ['Vendas', 'Serviços', 'Tributos']
 				},
 				toolbox: {
 				  show: true,
@@ -4246,25 +4255,19 @@ if (typeof NProgress != 'undefined') {
 				},
 				calculable: true,
 				series: [{
-				  name: '访问来源',
+				  name: 'Valor Liquido em Abril',
 				  type: 'pie',
 				  radius: '55%',
 				  center: ['50%', '48%'],
 				  data: [{
-					value: 335,
-					name: 'Direct Access'
+					value: 402900.74,
+					name: 'Vendas'
 				  }, {
-					value: 310,
-					name: 'E-mail Marketing'
+					value:386414.5,
+					name: 'Serviços'
 				  }, {
-					value: 234,
-					name: 'Union Ad'
-				  }, {
-					value: 135,
-					name: 'Video Ads'
-				  }, {
-					value: 1548,
-					name: 'Search Engine'
+					value: 133956.23,
+					name: 'Tributos'
 				  }]
 				}]
 			  });

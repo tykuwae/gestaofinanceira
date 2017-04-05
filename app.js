@@ -28,6 +28,8 @@ app.use('/users', users);
 //Modificações
 var dashboardRoute = require('./routes/dashboardRouteConfig.js')
 new dashboardRoute(app);
+var relatoriosRoute = require('./routes/relatoriosRouteConfig.js')
+new relatoriosRoute(app);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
