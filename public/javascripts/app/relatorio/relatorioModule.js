@@ -1,0 +1,1 @@
+var relatorioModule = angular.module("relatorioModule", []);
