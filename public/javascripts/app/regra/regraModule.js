@@ -1,1 +1,0 @@
-var regraModule = angular.module("regraModule", []);

@@ -3359,7 +3359,7 @@ if (typeof NProgress != 'undefined') {
 					  }
 					}
 				  },
-				  data: [1182105.53, 883071.23, 824648.35, 402900.64]
+				  data: [1182105.53, 883071.23, 824648.35, 402900.74]
 				}, {
 				  name: 'Prestação de Serviços',
 				  type: 'line',
